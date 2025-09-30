@@ -1,0 +1,11 @@
+## มองไปข้างหน้า
+
+เส้นทางยังไม่จบเพียงแค่นี้ มีหลายสิ่งที่ต้องทำต่อเพื่อให้ระบบนี้พัฒนาและยั่งยืน
+
+**ในระยะสั้น** หนึ่งถึงสามเดือนข้างหน้า ต้องนำ glossary ไป deploy เข้า production, ติดตั้งระบบ monitor consistency metrics, และรวบรวม feedback จาก user จริง พร้อมกันนั้นต้องสร้าง user guide ที่เข้าใจง่าย จัด training sessions ให้กับ user และรวบรวมคำถามที่พบบ่อยมาเพิ่มใน FAQ
+
+**ในระยะกลาง** สามถึงหกเดือน ควรพัฒนา validation layer เพิ่มเติมเพื่อตรวจจับคำตอบที่ผิดพลาด สร้าง query templates ใน UI เพื่อให้ user เลือกใช้ได้ง่าย และมีระบบ auto-suggest hints เพื่อช่วยเหลือ user ในการถามคำถาม ด้าน content ควรสร้าง query_clarification.md เพิ่มเติม เพิ่ม use case documents และอาจทำ video tutorials ด้าน process ต้อง establish glossary review cycle, สร้าง quality metrics dashboard และตั้ง feedback loop ที่ชัดเจน
+
+**ในระยะยาว** หกถึงสิบสองเดือน ควร fine-tune prompts ให้ดียิ่งขึ้น ทำ A/B testing templates เพื่อหา version ที่ดีที่สุด และ optimize RAG search ให้มีประสิทธิภาพมากขึ้น ควรขยายไปสร้าง glossaries สำหรับ use cases อื่นๆ integrate กับระบบอื่นในองค์กร และอาจพัฒนา multi-language support ด้าน governance ต้องกำหนด document ownership ชัดเจน สร้าง change management process และ quality assurance framework
+
+**Success metrics** ที่ควร track ทั้งแบบ quantitative คือ consistency มากกว่าหรือเท่ากับ 95%, user satisfaction มากกว่าหรือเท่ากับ 4 จาก 5, time saved ลดลง 30% และ adoption rate มากกว่าหรือเท่ากับ 70% และแบบ qualitative คือ user trust เพิ่มขึ้น คำถามซ้ำลดลง และ decision confidence สูงขึ้น
