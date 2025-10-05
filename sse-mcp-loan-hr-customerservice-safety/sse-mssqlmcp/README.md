@@ -1,4 +1,4 @@
-# RAG MCP Server with SSE Transport
+# MSSQL MCP Server with SSE Transport
 
 A Model Context Protocol (MCP) server that provides SQL Server database access through SSE (Server-Sent Events) transport, containerized with Docker.
 
