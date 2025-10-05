@@ -1,4 +1,4 @@
-# MSSQL MCP Server with SSE Transport
+# RAG MCP Server with SSE Transport
 
 A Model Context Protocol (MCP) server that provides SQL Server database access through SSE (Server-Sent Events) transport, containerized with Docker.
 
@@ -22,7 +22,7 @@ A Model Context Protocol (MCP) server that provides SQL Server database access t
 
 ## Quick Start
 
-### Edit a `.env` file with your database configuration:
+### 1. Edit a `.env` file with your database configuration:
 
 ```env
 DB_SERVER=your_server_address
@@ -31,7 +31,7 @@ DB_USER=your_username
 DB_PASSWORD=your_password
 ```
 
-### Run Docker Compose
+### 2. Run Docker Compose
 
 ```bash
 docker-compose up

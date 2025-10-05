@@ -1,4 +1,4 @@
-# PyRAGDoc MCP Server with SSE Transport
+# RAG MCP Server with SSE Transport
 
 A Model Context Protocol (MCP) server for RAG (Retrieval-Augmented Generation) documentation system with SSE (Server-Sent Events) transport, containerized with Docker.
 
