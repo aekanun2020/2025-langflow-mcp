@@ -22,7 +22,29 @@ A Model Context Protocol (MCP) server that provides SQL Server database access t
 
 ## Quick Start
 
-### Edit a `.env` file with your database configuration:
+### Using Docker Compose
+
+```bash
+docker-compose up
+```
+
+### Manual Installation
+
+```bash
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the server
+python main.py
+```
+
+## Configuration
+
+Create a `.env` file with your database configuration:
 
 ```env
 DB_SERVER=your_server_address
@@ -30,13 +52,6 @@ DB_NAME=your_database_name
 DB_USER=your_username
 DB_PASSWORD=your_password
 ```
-
-### Run Docker Compose
-
-```bash
-docker-compose up
-```
-
 
 ## API Endpoints
 
@@ -46,6 +61,34 @@ docker-compose up
 - `GET /` - API documentation
 
 **Note:** When using Docker, the server runs internally on port 8000 but is exposed externally on port 9000.
+
+## MCP Client Configuration
+
+For Claude Desktop or other MCP clients, use:
+
+```json
+{
+  "mcpServers": {
+    "mssql-sse": {
+      "url": "http://localhost:9000/sse"
+    }
+  }
+}
+```
+
+## Development
+
+### Running Tests
+
+```bash
+pytest tests/
+```
+
+### Building Docker Image
+
+```bash
+docker build -t mssql-mcp-sse .
+```
 
 ## License
 
