@@ -221,7 +221,8 @@ async def process_mcp_message(message: dict) -> Optional[dict]:
                     "inputSchema": {
                         "type": "object",
                         "properties": {
-                            "table_name": {"type": "string", "description": "Name of the table to preview"}
+                            "table_name": {"type": "string", "description": "Name of the table to preview"},
+                            "limit": {"type": "number", "description": "Maximum number of rows to return", "default": 10}
                         },
                         "required": ["table_name"]
                     }
